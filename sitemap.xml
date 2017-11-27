@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.corkhomemaintenance.ie/</loc>
+  <lastmod>2016-12-13T21:55:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.corkhomemaintenance.ie/index.html</loc>
+  <lastmod>2016-12-13T21:55:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.corkhomemaintenance.ie/painting.html</loc>
+  <lastmod>2016-12-13T21:55:32+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.corkhomemaintenance.ie/carpentry.html</loc>
+  <lastmod>2016-12-06T00:12:23+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.corkhomemaintenance.ie/plaster-repairs.html</loc>
+  <lastmod>2016-12-06T00:12:23+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.corkhomemaintenance.ie/handyman.html</loc>
+  <lastmod>2016-12-06T00:12:23+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

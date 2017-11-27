@@ -1,0 +1,53 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+body {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+#leftbar
+{
+position: relative;
+width: 70%;
+float: left;
+}
+
+#rightbar
+{
+padding-top: 5%;
+position: relative;
+width: 20%;
+float: right;
+}
+
+img.pic
+{
+position: relative;
+width: 100%;
+padding: 2%;
+}
+
+h1{
+font-weight: bold;
+font-size: 4em;
+}
+
+h2{
+font-weight: bold;
+}
+
+h4{
+font-weight: bold;
+}
+
+p.lead{
+font-weight: bold;
+}
