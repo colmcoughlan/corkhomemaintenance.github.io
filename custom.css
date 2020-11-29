@@ -32,6 +32,15 @@ width: 100%;
 float: left;
 }
 
+#footer
+{
+width: 100%;
+float: left;
+margin-left: 25%;
+margin-top: 3em;
+margin-bottom: 3em;
+}
+
 #leftcolumn
 {
 width: 50%;
