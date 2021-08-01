@@ -12,7 +12,6 @@
     gtag('config', 'UA-20582371-1');
   </script>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="keywords"
@@ -27,7 +26,9 @@
   <!-- Bootstrap core CSS -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
   <!-- Custom styles for this template -->
   <link href="custom.css" rel="stylesheet">
 
@@ -36,20 +37,24 @@
 <body>
 
   <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Home Maintenance and Renovation in West Cork</a>
+    <a class="navbar-brand" href="#">Cork Home Maintenance - Painting and Decorating</a>
   </nav>
+
+  <div class="logo">
+    <img src="images/logo_cork_home_maintenance.png" class='logo' alt="John Coughlan, painter and handyman.">
+  </div>
 
   <div class="container">
 
     <div id="leftbar">
-      <h2>Cork Home Maintenance</h2>
+      <h2>Painting and Decorating</h2>
       <p class="lead">Property Maintenance for Home and Business</p>
-      <p>Cork Home Maintenance provides high quality home maintenance in the West Cork and Cork area. I offer services in
-        every kind of home repair and renovation, including indoor and outdoor <a href="#painting">painting</a>, <a href="#carpentry">carpentry</a>, <a href="#plaster-repair">plaster repairs</a> and
-        more. I am fully insured and work with a mix of home and business customers. I have over twenty five years of experience in
-        painting, decorating and maintenance. Contact me on <b>087-7767553</b> for a free quotation.
-
-
+      <p>Cork Home Maintenance provides high quality home maintenance in the West Cork and Cork area. I offer services
+        in every kind of home repair and renovation, including indoor and outdoor painting, carpentry and
+        more. I am fully insured and work with a mix of home and business customers. I have over twenty five years of
+        experience in
+        painting, decorating and maintenance.
+        <p>My rates are compeditive and volume discounts are available for large amounts of work. Contact me on <b>087-7767553</b> for a free quotation.</p>
       <div>
         <p class="lead">
           <b>John Coughlan - Property Maintenance for Home and Business</b>
@@ -59,47 +64,64 @@
       </div>
 
       <div id="content">
-        <h2 id = "painting">Painting</h2>
+        <h2 id="painting">Painting</h2>
         <br />
         <div id="leftcolumn">
-          <h5>Interior</h5>
-          <ul>
-            <li>Houses</li>
-            <li>Rooms</li>
-            <li>Doors and Skirtings</li>
-            <li>Plaster Damage and Crack repair</li>
-            <li>Anti-fungal treatment</li>
-          </ul>
-          <h5>Exterior</h5>
-          <ul>
-            <li>Houses</li>
-            <li>Sheds</li>
-            <li>Plaster Damage repair</li>
-            <li>Powerwashing</li>
-          </ul>
+          <div id="innercontent">
+            <h5>Interior</h5>
+            <ul>
+              <li>Paint all rooms in house</li>
+              <li>Paint single rooms</li>
+              <li>Walls and Ceilings</li>
+              <li>Doors and Skirtings</li>
+              <li>Water stains</li>
+              <li>Plaster Damage and Crack repair</li>
+              <li>Anti-fungal treatment</li>
+            </ul>
+          </div>
+          <div id="innercontent">
+            <h5>Exterior - up to 2.4m in height</h5>
+            <ul>
+              <li>Houses</li>
+              <li>Sheds</li>
+              <li>Plaster Damage repair</li>
+              <li>Powerwashing</li>
+              <li>Paths</li>
+              <li>Driveways</li>
+            </ul>
+          </div>
         </div>
 
         <div id="rightcolumn">
-          <h5>Rental Houses and Holiday Homes</h5>
-          <ul>
-            <li>Paint all rooms</li>
-            <li>Paint single room</li>
-            <li>Volume discount available</li>
-          </ul>
-          <br/>
-          <br/>
-          <h5>More</h5>
-          <ul>
-            <li>Sanding and varnishing</li>
-            <li>Gates and Railings</li>
-            <li>Garden sheds repair</li>
-            <li>Shed refelting</li>
-          </ul>
+          <div id="innercontent">
+            <h5>Garden and Outdoors</h5>
+            <ul>
+              <li>Sanding and varnishing</li>
+              <li>Garden Walls</li>
+              <li>Gates and Railings</li>
+              <li>Garden sheds repair</li>
+              <li>Decking</li>
+              <li>Patio Furniture</li>
+              <li>Fencing</li>
+            </ul>
+          </div>
+          <div id="innercontent">
+            <h5>Rental Houses and Holiday Homes</h5>
+            <ul>
+              <li>Paint all rooms</li>
+              <li>Paint single room</li>
+              <li>Volume discount available</li>
+              <li>Filling and chaulking</li>
+              <li>Plaster repairs</li>
+            </ul>
+            <br />
+            <br />
+          </div>
         </div>`
       </div>
 
       <div id="content">
-        <h2 id = "carpentry">Carpentry</h2>
+        <h2 id="general">General</h2>
         <br />
         <div id="leftcolumn">
           <ul>
@@ -122,48 +144,27 @@
         </div>
       </div>
 
-      <div id="content">
-        <h2 id = "plaster-repair">General maintenance and Plaster Repairs</h2>
-        <br />
-        <div id="leftcolumn">
-          <ul>
-            <li>Draught proofing/Chaulking</li>
-            <li>Plaster Damage and Crack repair</li>
-            <li>Concrete repairs</li>
-            <li>Floors leveled</li>
-            <li>Plain plasterboard coving</li>
-          </ul>
-        </div>
-
-        <div id="rightcolumn">
-          <ul>
-            <li>Bathroom fittings installed</li>
-            <li>Driveways treated for algae and moss</li>
-            <li>Clothes lines erected</li>
-            <Li>Pictures hung</Li>
-            <li>Clearing and Skip filling</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
 
     <div id="rightbar">
-      <img src="images/John_Coughlan.jpg" class='pic' alt="John Coughlan, painter and handyman.">
-      <img src="images/painter_van.jpg" class='pic' alt="John Coughlan Home Maintenance, painter and handyman.">
+      <div id="mapid"></div>
       <p class="lead">
         <b>John Coughlan</b>
         <br>
         <b>087-7767553</b>
+        <p>I serve a 25km radius around Bandon, West Cork.</p>
       </p>
-      <br/>
+      <img src="images/painter_van.jpg" class='pic' alt="John Coughlan Home Maintenance, painter and handyman.">
+      <br />
       <h3>Testimonials</h3>
-      <br/>
+      <br />
       <h4>"Reliable, trustworthy and skillful" - Ann</h4>
-      <p>"John has been doing jobs for me for ten years and I find him reliable, trustworthy and skillful. I trust his advice and would not hesitate to recommend him."</p>
-      <br/>
+      <p>"John has been doing jobs for me for ten years and I find him reliable, trustworthy and skillful. I trust his
+        advice and would not hesitate to recommend him."</p>
+      <br />
       <h4>"Professional, competent and reliable" - Oistin</h4>
-      <p>"John is a very professional, competent and reliable painter. He recently completed internal and external painting
+      <p>"John is a very professional, competent and reliable painter. He recently completed internal and external
+        painting
         of our home and we were delighted with his workmanship and his good value for money."</p>
     </div>
 
@@ -176,5 +177,9 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+<script src="map.js"></script>
 
 </html>
